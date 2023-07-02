@@ -1,0 +1,410 @@
+/* COMMON STRUCTURE */
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+  color: black; /* provvisorio*/
+  
+}
+
+body {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  /*background-color: #f1f1f1;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  z-index: 999;
+  opacity: 1;
+
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.brand h1 {
+  margin: 0;
+  color: gold;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 14px;
+  color: white;                   /* #888; */
+}
+
+nav ul {
+  list-style: none;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;                             /* color: #333; */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: gold;    /* color: #555;*/
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: gold;
+  padding: 20px;
+  margin-top: auto;
+  background-color: black;
+  color: gold;
+}
+
+.signature {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+ion-icon {
+  color: white;
+  margin-right: 30px;
+  height: 20px;
+  width: 20px;
+}
+
+ion-icon:hover {
+  color: gold;
+}
+
+
+
+
+
+
+/* HOME CONTENT */
+
+
+.bio {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.bio-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  color: black;
+}
+
+.btn-download {
+  margin-top: 5px;
+  padding: 10px 20px; 
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.btn-download:hover {
+  color: gold;
+}
+
+
+
+/* PORTFOLIO CONTRENT */
+
+#portfolio {
+  padding: 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.portfolio-title {
+  margin-left: 20px;
+}
+
+.portfolio-title h1 {
+  margin-bottom: 5px;
+}
+
+.portfolio-title p {
+  margin-top: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.project {
+  border-radius: 10px !important;
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project img {
+  border-radius: 10px;
+  height: 350px;
+  width: 350px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
+  border: 2px solid;
+  border-color: black;
+}
+
+.project img:hover {
+  border-color: gold;
+}
+
+.project h1 {
+  font-size: 20px;
+  width: 145px;
+  color: black;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.project h1:hover{
+  color: gold;
+  cursor: pointer;
+}
+.project p.description {
+  font-size: 14px;
+  margin-top: 5px;
+ 
+}
+
+
+
+
+
+
+
+/* Stile generale del form */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  
+}
+
+
+.form-title h1 {
+  margin-bottom: 5px;
+}
+
+.form-title p {
+  margin-top: 10px;
+}
+
+
+/* Stile degli elementi del form */
+.form-item-fullname {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.form-item-name,
+.form-item-surname {
+  width: 245px;
+}
+
+
+#name,
+#surname {
+  width: 220px;
+}
+
+
+
+
+
+
+
+
+.form-item-email,
+.form-item-message {
+  margin-bottom: 20px;
+}
+
+.form-item-name label,
+.form-item-surname label,
+.form-item-email label,
+.form-item-message label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Stile degli input e della textarea */
+.form-control {
+  width: calc(100% - 20px); /* Riduci la larghezza degli input sottraendo il margine del div */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea.form-control {
+  height: 100px;
+}
+
+/* Stile del pulsante di invio */
+.btn-primary {
+  
+    margin-top: 10px;
+    padding: 10px 20px; 
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+  
+}
+
+.btn-primary:hover {
+  color: gold;
+  
+ 
+}
+
+.btn-primary:focus {
+box-sizing: content-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT CONTENT
+.form-container {
+  border-width: 2px;
+  
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  
+}
+
+/*
+.form-group h5 {
+  margin: 0;
+  margin-right: 10px;
+}
+
+
+
+.form-group input,
+.form-group textarea {
+  flex: 1;
+  width: 100%;
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
+
+*/

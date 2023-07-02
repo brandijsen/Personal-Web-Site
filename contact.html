@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="./assets/js/index.js"></script>
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("0Q8o_P98a2Aoo14Wy");
+   })();
+
+</script>
+</head>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="brand">
+        <h1>ANDREA BRANDETTI</h1>
+        <h2>WEB DEVELOPER</h2>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="form-container">
+    <div class="form-title">
+    <h1>LET'S GET IN TOUCH</h1>
+    <p>Did you like my projects? Contact me!</p>
+  </div>
+    <div class="form-item-fullname">
+      <div class="form-item-name">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter name"
+          name="name"
+          required
+      />
+      </div>
+      <div class="form-item-surname">
+      <label for="surname">Surname</label>
+        <input
+          type="text"
+          class="form-control"
+          id="surname"
+          placeholder="Enter surname"
+          name="surname"
+          required
+      />
+      </div>
+    </div>
+    <div class="form-item-email">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        placeholder="Enter email"
+        name="email"
+        required
+      />
+    </div>
+    <div class="form-item-message">
+      <label for="message">Message</label>
+      <textarea 
+        class="form-control" 
+        id="message" 
+        rows="3"
+        required
+        >
+      </textarea>
+    </div>
+    <button class="btn btn-primary" onclick="validateAndSend()">SUBMIT</button>
+  </section>
+  
+
+
+
+
+
+
+  
+  <footer>
+    <div class="signature">
+      <h4>&copy; ANDREA BRANDETTI 2023</h4>
+    </div>
+    <div class="social-media">
+      <a href="https://github.com/brandijsen" target="_blank"><ion-icon name="logo-github"></ion-icon></a> 
+      <a href="https://www.linkedin.com/in/andrea-brandetti-5672a327a/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a> 
+
+  </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
